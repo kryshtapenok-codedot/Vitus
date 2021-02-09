@@ -1,1 +1,11 @@
-h1 { color: red; }
+
+//base
+@import 'includes/base/utils';
+@import 'includes/base/vars';
+@import 'includes/base/global';
+@import 'includes/base/fonts';
+@import 'includes/base/mixins';
+
+// Core Templates
+@import 'footer';
+@import 'header';

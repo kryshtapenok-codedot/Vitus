@@ -1,0 +1,6 @@
+@mixin brakepoint($br) {
+    
+    @media (max-width: $br) {
+        @content;
+    }
+}
