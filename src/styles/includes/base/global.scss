@@ -1,0 +1,35 @@
+body {
+    background-color: $body__bg-color;
+    font-family: $font-Montserrat;
+    color: $text-color-1;
+}
+body.lock {
+    overflow: hidden;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .2s linear;
+
+    &:hover {
+        text-decoration: none;
+        color: $secondary-blue;
+    }
+
+    &:active {
+        color: $active;
+    }
+}
