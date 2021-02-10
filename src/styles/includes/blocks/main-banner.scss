@@ -1,0 +1,91 @@
+main {
+    width: 100%;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 48px 0;
+    background-image: url("/img/bg-image__main-banner.png");
+    background-size: cover;
+    height: 278px;
+
+    @include brakepoint($laptop-bp) {
+        height: 662px;
+        background-image: url("/img/main-banner-bg-tablet.png");
+        padding: 307px 0 153px 0;
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        height: 559px;
+        background-image: url("/img/main-banner-bg-mobile.png");
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 0 0;
+
+        .container {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.main-banner__content {
+
+    @include brakepoint($mobile_l-bp) {
+        padding: 40px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.main-banner__preview {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 10px;
+
+    @include brakepoint($mobile_l-bp) {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+.main-banner__title {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+    @include brakepoint($laptop-bp) {
+        margin-bottom: 53px;
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.main-banner__button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: $secondary-blue;
+    padding: 17px 93px;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $button-hover;
+        color: white;
+        box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
