@@ -9,7 +9,24 @@
 
 
 
+
+
+
+
+
+
+
+//blocks
+@import 'includes/blocks/topbar'; 
+@import 'includes/blocks/main-banner';
+@import 'includes/blocks/home-cards';
+@import 'includes/blocks/home-benefits-strip';
+@import 'includes/blocks/main-banners';
 @import 'includes/blocks/home-new-trouville';
+
+ 
+
+
 // Core Templates
 @import 'footer';
 @import 'header';
