@@ -9,6 +9,13 @@
 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
 
+
+  <!-- подключение скриптов JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+
+
+
   {%- capture seo_title -%}
     {%- if request.page_type == 'search' and search.performed == true -%}
       {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
@@ -31,6 +38,10 @@
 </head>
 <body>
 {{ content_for_layout }}
+
+<!-- подключение js -->
+<script src="/js/app.js"></script>
+
 
 <script src="{{ 'theme.js' | asset_url }}"></script>
 </body>
