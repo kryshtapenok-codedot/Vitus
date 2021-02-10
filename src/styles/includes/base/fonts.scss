@@ -6,7 +6,7 @@ $urlFonts: '../assets/';
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat Italic'),local('MontserratItalic'),
+    src:local('Montserrat'),local('MontserratItalic'),
     url('#{$urlFonts}Montserrat-Light.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-Light.woff') format('woff'),
     url('#{$urlFonts}Montserrat-Light.ttf') format('truetype');
@@ -17,7 +17,7 @@ $urlFonts: '../assets/';
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat'), local('MontserratItalic'),
+    src:local('Montserrat Italic'), local('MontserratItalic'),
     url('#{$urlFonts}Montserrat-LightItalic.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-LightItalic.woff') format('woff'),
     url('#{$urlFonts}Montserrat-LightItalic.ttf') format('truetype');
@@ -27,7 +27,7 @@ $urlFonts: '../assets/';
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat Italic'),local('Montserrat'),
+    src:local('Montserrat'),local('Montserrat'),
     url('#{$urlFonts}Montserrat-Regular.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-Regular.woff') format('woff'),
     url('#{$urlFonts}Montserrat-Regular.ttf') format('truetype');
@@ -37,7 +37,7 @@ $urlFonts: '../assets/';
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat'),local('MontserratItalic'),
+    src:local('Montserrat'),local('Montserrat'),
     url('#{$urlFonts}Montserrat-Medium.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-Medium.woff') format('woff'),
     url('#{$urlFonts}Montserrat-Medium.ttf') format('truetype');
@@ -58,7 +58,7 @@ $urlFonts: '../assets/';
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat'),local('MontserratItalic'),
+    src:local('Montserrat'),local('Montserrat'),
     url('#{$urlFonts}Montserrat-SemiBold.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-SemiBold.woff') format('woff'),
     url('#{$urlFonts}Montserrat-SemiBold.ttf') format('truetype');
@@ -79,7 +79,7 @@ $urlFonts: '../assets/';
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat'),local('MontserratItalic'),
+    src:local('Montserrat'),local('Montserrat'),
     url('#{$urlFonts}Montserrat-Bold.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-Bold.woff') format('woff'),
     url('#{$urlFonts}Montserrat-Bold.ttf') format('truetype');
