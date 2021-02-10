@@ -6,7 +6,8 @@ $urlFonts: '../assets/';
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src:local('Montserrat'),local('MontserratItalic'),
+
+    src:local('Montserrat'),local('Montserrat'),
     url('#{$urlFonts}Montserrat-Light.woff2') format('woff2'),
     url('#{$urlFonts}Montserrat-Light.woff') format('woff'),
     url('#{$urlFonts}Montserrat-Light.ttf') format('truetype');
