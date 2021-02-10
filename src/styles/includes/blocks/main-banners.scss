@@ -1,0 +1,226 @@
+.banners {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 27.638% 42.5% 27.638%;
+    grid-column-gap: 16px;
+    margin-bottom: 160px;
+
+    @include brakepoint($laptop-bp) {
+        margin-bottom: 122px;
+    }
+
+    @include brakepoint($tablet-bp) {
+        grid-column-gap: 10px;
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        grid-template-columns: 90%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+.banner__1 {
+    background-image: url("/img/banners/banner__1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 150%;
+
+    @include brakepoint($mobile_l-bp) {
+        display: none;
+    }
+}
+
+.banner__2 {
+    background-image: url("/img/banners/banner__2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 98%;
+
+    @include brakepoint($mobile_l-bp) {
+        display: none;
+    }
+}
+
+.banner__3-1 {
+    background-image: url("/img/banners/banner__3.1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 74.371%;
+}
+
+.banner__3-2 {
+    background-image: url("/img/banners/banner__3.2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 74.371%;
+}
+
+.banner__3 {
+    display: grid;
+    grid-template-rows: 49.3% 49.3%;
+    grid-row-gap: 14px;
+
+    @include brakepoint($tablet-bp) {
+        grid-row-gap: 7px;
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        grid-row-gap: 16px;
+    }
+}
+
+
+.banner__text-1 {
+    height: 190px;
+    background: rgba(46, 46, 46, 0.8);
+    margin-top: -190px;
+    padding: 32px 56px;
+
+    @include brakepoint($laptop-bp) {
+        padding: 17px 38px;
+        height: 129px;
+        margin-top: -129px;
+    }
+
+    @include brakepoint($tablet-bp) {
+        padding: 16px 19px;
+    }
+
+    .subtitle-1 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .banner__title-1 {
+        font-size: 34px;
+        font-weight: 600;
+        margin: 9px 0;
+
+        @include brakepoint($laptop-bp) {
+            font-size: 27px;
+            margin: 1px 0;
+        }
+
+        @include brakepoint($tablet-bp) {
+            font-size: 22px;
+        }
+    }
+
+    .subtitle-2 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+
+        @include brakepoint($laptop-bp) {
+            br {
+                display: none;
+            }
+        }
+
+        @include brakepoint($tablet-bp) {
+            font-size: 11px;
+        }
+    }
+}
+
+.banner__text-2 {
+    height: 114px;
+    background: rgba(46, 46, 46, 0.8);
+    margin-top: -114px;
+    padding: 16px 32px;
+
+    @include brakepoint($laptop-bp) {
+        padding: 8px 22px;
+        height: 105px;
+        margin-top: -105px;
+    }
+
+    @include brakepoint($tablet-bp) {
+        padding: 8px 10px;
+        height: 90px;
+        margin-top: -90px;
+    }
+
+    .subtitle-1 {
+        font-size: 12px;
+        font-weight: 500;
+
+        @include brakepoint($laptop-bp) {
+            font-size: 10px;
+        }
+    }
+
+    .banner__title-1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 5px 0;
+
+        @include brakepoint($laptop-bp) {
+            margin: 0;
+        }
+
+        @include brakepoint($tablet-bp) {
+            font-size: 17px;
+        }
+
+        @include brakepoint($mobile_l-bp) {
+            font-size: 24px;
+        }
+    }
+
+    .subtitle-2 {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 18px;
+
+        @include brakepoint($tablet-bp) {
+            font-size: 8px;
+        }
+
+        @include brakepoint($mobile_l-bp) {
+            font-size: 10px;
+        }
+
+        @include brakepoint($mobile_s-bp) {
+            font-size: 8px;
+        }
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        padding: 8px 24px;
+    }
+}
+
+.slider-dot {
+    display: none;
+    margin: 25px 0 80px 0;
+    width: 100%;
+    justify-content: center;
+
+    span {
+        display: block;
+        width: 8px;
+        margin: 0 4px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #97979B;
+    }
+
+    span.active {
+        background-color: $secondary-blue;
+        transform: scale(1.3);
+    }
+
+    @include brakepoint($mobile_l-bp) {
+        display: flex;
+    }
+}
